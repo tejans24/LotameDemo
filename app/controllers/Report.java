@@ -67,7 +67,7 @@ public class Report extends Controller{
 			result.put(APIConstants.JSON_ERROR_KEY, APIConstants.JSON_500_MESSAGE);
 			
 			//returning a Http 500, when json mapper error occurs
-			return internalServerError(result);
+			return badRequest(result);
 		}
 		
 		
