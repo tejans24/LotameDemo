@@ -1,0 +1,82 @@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>@title</title>
+        
+        <meta charset="UTF-8"/>
+        <title>Backbone.js Library</title>
+        
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="@routes.Assets.at("css/main.css")">
+        <link rel="stylesheet" href="@routes.Assets.at("css/bootstrap/bootstrap-responsive.css")">
+        <link rel="stylesheet" href="@routes.Assets.at("css/bootstrap/bootstrap.css")">
+       	<link rel="stylesheet" href="@routes.Assets.at("css/backgrid.css")" />
+        		
+		<!-- Libraries to be included -->
+        <script src="@routes.Assets.at("js/lib/jquery-latest.js")"></script>
+        <script src="@routes.Assets.at("js/lib/underscore.js")"></script>
+        <script src="@routes.Assets.at("js/lib/backbone.js")"></script>
+        <script src="@routes.Assets.at("js/lib/bootstrap.js")"></script>
+        <script src="@routes.Assets.at("js/lib/backgrid.js")"></script>
+        <script src="@routes.Assets.at("js/lib/lunr.js")"></script>
+        <script src="@routes.Assets.at("js/lib/extensions/filter/backgrid-filter.js")"></script>
+        
+        			<!-- Backbone.js -->
+        
+        <!-- Models -->
+        <script src="@routes.Assets.at("js/models/audience.js")"></script>
+        
+        <!-- Views -->
+        <script src="@routes.Assets.at("js/views/audience_view.js")"></script>
+        <script src="@routes.Assets.at("js/views/audience_list_view.js")"></script>
+        
+        <!-- Collections -->
+        <script src="@routes.Assets.at("js/collections/audience_list.js")"></script>
+	
+		<!-- App JS -->
+        <script src="@routes.Assets.at("js/app/app.js")"></script>
+		
+		
+    </head>
+    
+    <body>
+    
+		<!-- Navigation Bar -->
+		<div class="navbar  navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<button type="button" class="btn btn-navbar" data-toggle="collapse"
+						data-target=".nav-collapse">
+						<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+					<a class="brand" href="#">Lotame Demo</a>
+					<div class="nav-collapse collapse">
+						<ul class="nav">
+							<li class="dropdown active"><a href="#" class="dropdown-toggle"
+								data-toggle="dropdown">Reports<b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="/">Top Audience Report</a></li>
+								</ul>
+							</li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+    	<div class="container">    		
+    	
+        	@content
+        	 	
+        	@_footer()
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,15 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           				controllers.Application.index()
+
+# Report controller
+GET    	/reports/topAudiences						controllers.Report.topAudiences()
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               						controllers.Assets.at(path="/public", file)
+GET     /assets/img/spinner.gif					      		controllers.Assets.at(path="/public", file="/img/spinner.gif")
+GET     /assets/img/glyphicons-halflings-white.png      	controllers.Assets.at(path="/public", file="/img/glyphicons-halflings-white.png")
+GET     /assets/img/glyphicons-halflings.png            	controllers.Assets.at(path="/public", file="/img/glyphicons-halflings.png")
