@@ -1,4 +1,7 @@
-This is your new Play 2.1 application
+LotameDemo application
 =====================================
 
-This file will be packaged with your application, when using `play dist`.
+This is a demo application created using Java Play framework 2.1.1
+
+Author: Teja Naraparaju
+
