@@ -27,8 +27,6 @@ public class Report extends Controller{
 	private static String PAGE_COUNT_PARAMETER_NAME = "page_count";
 	private static String PAGE_COUNT = "20";
 
-	//private static Token token = AuthorizationUtil.getNewToken();
-
     /**
      * Route: /reports/topAudience
      * <p>
